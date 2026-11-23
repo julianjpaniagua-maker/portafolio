@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Julián Jara, especialista en marketing digital.">
+  <title>Julián Jara | Portafolio de marketing digital</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f7f2;
+      --ink: #1b211d;
+      --muted: #505a51;
+      --line: #d4d8cf;
+      --accent: #d8ef94;
+      --forest: #23382c;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.55 system-ui, sans-serif; }
+    a { color: inherit; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #517650; outline-offset: 5px; }
+    .wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+    .site-nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.25rem; }
+    .site-nav a { text-decoration: none; }
+    .site-nav > a { font-weight: 750; }
+    .site-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: .65rem 1.4rem; padding: 0; margin: 0; }
+    .site-nav a:hover { text-decoration: underline; }
+    .hero { background: var(--forest); color: var(--paper); border-radius: 20px; padding: clamp(2rem, 8vw, 7rem); }
+    .hero p { max-width: 46ch; margin: 1.4rem 0 2rem; }
+    .role { color: var(--accent); font-size: .98rem; font-weight: 650; }
+    h1, h2 { font-family: Georgia, serif; font-weight: 400; margin: 0; line-height: 1.02; letter-spacing: -.045em; }
+    h1 { font-size: clamp(3rem, 9vw, 8rem); margin-top: .65rem; }
+    h2 { font-size: clamp(2.35rem, 5vw, 4.75rem); }
+    .button { display: inline-block; background: var(--accent); color: #19231b; padding: .85rem 1.2rem; border-radius: 7px; text-decoration: none; font-weight: 750; }
+    .button:hover { background: #e6f5bd; }
+    .section { padding-block: clamp(3rem, 8vw, 6rem); scroll-margin-top: 1rem; }
+    .about { display: grid; grid-template-columns: 1fr 1.3fr; gap: 1.25rem 4rem; border-bottom: 1px solid var(--line); }
+    .about p { margin: 0; max-width: 60ch; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.25rem); }
+    .intro { color: var(--muted); margin: 1rem 0 2rem; }
+    .brands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: .7rem; }
+    details { background: #fffefa; border: 1px solid var(--line); border-radius: 10px; }
+    details[open] { border-color: #849989; }
+    summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem 1.3rem; cursor: pointer; border-radius: inherit; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { background: #f0f3e9; }
+    summary strong, summary small { display: block; }
+    summary strong { font-size: 1.12rem; }
+    summary small, .pending { color: var(--muted); }
+    .toggle { display: grid; place-items: center; background: #edf0e6; color: var(--forest); width: 2rem; height: 2rem; border-radius: 50%; flex: none; font-size: 1.25rem; }
+    .toggle::before { content: '+'; }
+    details[open] .toggle::before { content: '−'; }
+    .brand-content { padding: 0 1.3rem 1.1rem; }
+    .brand-content p { margin: .4rem 0; }
+    .pending { font-size: .875rem; }
+    img, video, audio { max-width: 100%; }
+    .contact { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; padding: clamp(1.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; border-radius: 16px; background: #e9eddf; }
+    .contact .button { background: var(--forest); color: white; }
+    .contact .button:hover { background: #36533f; }
+    @media (max-width: 630px) {
+      .wrap { width: calc(100% - 28px); }
+      .about, .brands { grid-template-columns: 1fr; }
+      .site-nav { gap: .5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#inicio">Julián Jara</a>
+      <ul>
+        <li><a href="#resumen">Resumen</a></li>
+        <li><a href="#marcas">Marcas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section id="inicio" class="hero" aria-labelledby="nombre">
+      <span class="role">Especialista en marketing digital</span>
+      <h1 id="nombre">Julián Jara</h1>
+      <p>Campañas, sitios web y contenido para marcas. De la estrategia y la producción a la medición de resultados.</p>
+      <a class="button" href="#marcas">Ver marcas</a>
+    </section>
+    <section id="resumen" class="section about" aria-labelledby="titulo-resumen">
+      <h2 id="titulo-resumen">Resumen</h2>
+      <p>Trabajo en marketing digital en Nova Growth Agency. Desarrollo campañas en Meta Ads y Google Ads, colaboro en sitios y tiendas en Shopify y WordPress, y uso GA4 y Looker Studio para analizar el desempeño. También participo en la creación de piezas gráficas y videos para las campañas.</p>
+    </section>
+    <section id="marcas" class="section" aria-labelledby="titulo-marcas">
+      <h2 id="titulo-marcas">Marcas</h2>
+      <p class="intro">Abre una marca para ver mi participación en el proyecto.</p>
+      <div class="brands">
+        <details>
+          <summary><span><strong>Navyfit</strong><small>Shopify · Meta Ads · Analítica</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>E-commerce de equipo de fuerza, campañas y seguimiento del recorrido de compra.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Navyfit. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Corral Grande</strong><small>Meta Ads · Estrategia · Reportes</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Campañas para cursos y eventos, seguimiento de prospectos y análisis de resultados.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Corral Grande. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>ALKU</strong><small>Shopify · Diseño web</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Contenido y diseño para una tienda de cuidado personal.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de ALKU. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Plásticos Hernández</strong><small>Diseño web · Contenido B2B</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Presentación de productos y soluciones de empaque para empresas.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Plásticos Hernández. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Amareto’s Pizza</strong><small>Redes sociales · Pauta</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Contenido y campañas para una marca local de pizza.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Amareto’s Pizza. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Tacos Pepo</strong><small>Redes sociales · Pauta</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Contenido y promoción digital para el público local.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Tacos Pepo. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Play Jump Park</strong><small>Redes sociales · Diseño</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Creativos de temporada y promoción digital para un parque de trampolines.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Play Jump Park. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Explora Eventos</strong><small>Diseño web · Copywriting</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Contenido web para presentar sus servicios y facilitar el contacto.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Explora Eventos. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Academia Nova</strong><small>Marketing educativo</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Proyecto de cursos introductorios de marketing.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Academia Nova. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>Muebles El Porvenir</strong><small>Diseño web · Copywriting</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Presentación digital de la marca y sus categorías de muebles.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de Muebles El Porvenir. -->
+          </div>
+        </details>
+        <details>
+          <summary><span><strong>ENTOMO</strong><small>Identidad visual · Empaque</small></span><span class="toggle" aria-hidden="true"></span></summary>
+          <div class="brand-content">
+            <p>Desarrollo de identidad, empaque y aplicaciones de marca.</p>
+            <p class="pending">Materiales por agregar.</p>
+            <!-- Agrega aquí enlaces, imágenes, resultados, videos o audios de ENTOMO. -->
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer id="contacto" class="wrap contact" aria-labelledby="titulo-contacto">
+    <h2 id="titulo-contacto">Contacto</h2>
+    <!-- Cambia este enlace por tu correo (mailto:), LinkedIn o WhatsApp. -->
+    <a class="button" href="https://github.com/JuJP450">Ver mi perfil de GitHub</a>
+  </footer>
+</body>
+</html>
